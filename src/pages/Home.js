@@ -1,12 +1,13 @@
 import React from 'react';
+import Herocomponents from './components/hero'
+import Scroll from './components/scroll'
 
 function Home() {
   return (
-    <section className="hero">
-      <h2>Welcome to MindMarketing</h2>
-      <p>Your solution to effective marketing strategies.</p>
-      <button>Get Started</button>
-    </section>
+    <div>
+      <Herocomponents></Herocomponents>
+      <Scroll></Scroll>
+    </div>
   );
 }
 

@@ -1,0 +1,57 @@
+/* Herocomponents.css */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #363A36;
+    position: relative; /* Esto es importante para que el content_arrow use position: absolute */
+}
+
+.hero-logo {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: #e93d07;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.span_headrer {
+    color: white;
+    padding: 10px;
+    max-width: 700px; /* Para limitar el ancho del texto */
+    text-align: center;
+}
+
+.button_information {
+    color: gray;
+}
+
+.btton_content_information {
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 40px; /* Para añadir espacio entre el botón y la flecha */
+}
+
+.content_arrow {
+    position: absolute;
+    cursor: pointer;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: gray;
+}
+
+.content_arrow span {
+    font-size: 14px;
+    margin-bottom: 5px;
+}

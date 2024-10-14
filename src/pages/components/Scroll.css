@@ -1,0 +1,46 @@
+/* Contenedor principal que ocupa toda la pantalla */
+.scroll-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Mantener todo dentro de la vista inicial */
+    position: relative;
+  }
+  
+  /* Contenedor que permitirá el scroll */
+  .scroll-container {
+    height: 200vh; /* Más espacio para el scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .scroll-image {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+  }
+  
+  .first {
+    top: 100px;
+  }
+  
+  .second {
+    top: 500px;
+    opacity: 0;
+  }
+  
+  .third {
+    top: 900px;
+  }
+  
+  .images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

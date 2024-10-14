@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado</title>
+    <!-- Integrar Font Awesome sin integridad -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container_w {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+            background-color: #ff4500;
+            color: white;
+            justify-content: center; /* Centra los elementos en la línea */
+            align-items: center;
+            padding: 10px 20px; /* Añadir un poco de padding */
+        }
+
+        .contact-info {
+            text-align: center;
+            margin: 10px; /* Añadir un margen para separar las tarjetas */
+            flex: 1 1 200px; /* Permite que los elementos se ajusten en una fila y ocupen el espacio disponible */
+            max-width: 250px; /* Limita el ancho máximo de cada contacto */
+        }
+
+        .contact-info i {
+            font-size: 25px; /* Tamaño del ícono */
+            margin-bottom: 5px; /* Reduce el margen inferior para mejor alineación */
+            display: inline-block; /* Asegura que el ícono se alinee con el texto */
+            vertical-align: middle; /* Alinea verticalmente el ícono */
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1rem; /* Tamaño de fuente base */
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold; /* Acentuar el enlace */
+        }
+
+        .contact-info span {
+            font-size: 0.8em;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .contact-info p {
+                font-size: 0.9rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+            }
+
+            .contact-info i {
+                font-size: 20px; /* Reducir el tamaño del ícono en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .contact-info p {
+                font-size: 0.8rem; /* Más pequeño en pantallas extra pequeñas */
+            }
+
+            .container_w {
+                padding: 5px; /* Reducir padding en pantallas muy pequeñas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_w">
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i> <!-- Ícono de email -->
+            <p><a href="mailto:j.arias@mind-marketing.com">j.arias@mind-marketing.com</a></p>
+            <span>Email</span>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i> <!-- Ícono de ubicación -->
+            <p>Carlos Julio Arosemena 14-76<br>y Eduardo Salazar</p>
+            <span>Dirección</span>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-phone"></i> <!-- Ícono de teléfono -->
+            <p>(593-2) 2 272 066<br>(593-2) 2272 067</p>
+            <span>Teléfonos</span>
+        </div>
+    </div>
+</body>
+</html>

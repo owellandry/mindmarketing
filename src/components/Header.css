@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.links, .menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.logo img {
+  height: 34px;
+}
+
+.menu div {
+  color: #D9D9D9;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #7F8280;
+  font-size: 26px;
+  position: relative;
+  padding: 15px 0px 0px 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .links {
+    display: none; /* Ocultar los enlaces en pantallas pequeñas */
+  }
+  .menu {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo div {
+    font-size: 20px;
+  }
+  .menu div {
+    font-size: 18px;
+  }
+}
+

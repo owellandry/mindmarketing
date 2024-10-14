@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+            width: 100%;
+        }
+
+        .footer-item {
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .cont_footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cont_footer img {
+            width: 80px; /* Ajusta el tamaño según sea necesario */
+            height: auto;
+            margin-left: 5px;
+        }
+
+        @media (max-width: 600px) {
+            footer {
+                grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+                text-align: center;
+            }
+
+            .footer-item {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="footer-item">
+            <span>Volver arriba</span>
+        </div>
+        <div class="footer-item">
+            <span>2024 Todos los derechos reservados</span>
+        </div>
+        <div class="footer-item cont_footer">
+            <span>Diseñado por</span>
+            <img src="https://mindmarketing.lat/wp-content/uploads/2024/10/image.png" alt="Imagen no disponible">
+        </div>
+    </footer>
+
+</body>
+
+</html>

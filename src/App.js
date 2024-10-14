@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
 import Equipo from './pages/Equipo';
+import './App.css'
 
 function App() {
   return (
